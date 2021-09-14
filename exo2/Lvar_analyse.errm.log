@@ -1,0 +1,4 @@
+START report: Tue Sep 14 16:24:56 2021 
+** Error: (eldo-363)  COMMAND .DC: The parameter name is not specified or  is not a primitive.
++    Unable to perform this analysis.
+** Error: (eldo-26)   No analysis specified

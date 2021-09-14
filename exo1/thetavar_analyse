@@ -1,0 +1,18 @@
+Titre thethavar_analyse
+Vds 1 0 3
+Vgs 2 0
+.PARAM thetavar=0.01
+.dc vgs 0 3 0.01 sweep thetavar 0.05u 0.2 0.05
+*toxvar=0.025u
+*sweep toxvar 0.005u 0.030u 0.005u 
+.model mod1 nmos level=3
++ld=0.1u
++tox=0.025u
++nsub=7e16
++nss=1e10
++uo=500
++xj=0.5u
++theta=thetavar
+M1 1 2 0 0 mod1 L=1u w=10u
+.option post
+.end

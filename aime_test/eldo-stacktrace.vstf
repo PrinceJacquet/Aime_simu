@@ -1,0 +1,52 @@
+Stack Trace Dump
+Program = /soft/MENTOR/amsv/aol/bin/eldo_64.exe (v20.1_0.1)
+Args = -i tp_aime
+Date = Tue Sep 14 14:47:52 2021
+# Level    PC      Function Name+offset  filename
+#====================================================
+#   0  0x0000000000e7bd67: eldo_dump_callstack_linux [eldo_dump_stacktrace.c:?]
+#   1  0x0000000000e7bdcd: eldo_dump_callstack+0x3d [eldo_64.exe]
+#   2  0x0000000000cf780a: FAULT_exit+0x1aa [eldo_64.exe]
+#   3  0x00007f27c2c8f630: +0xf630 [libpthread.so.0]
+#   4  0x00007f27bbb05269: +0x90269 [libc.so.6]
+#   5  0x0000000000a4cd8f: cscont+0x99f [eldo_64.exe]
+#   6  0x0000000000e46226: send_current_line+0xcd6 [eldo_64.exe]
+#   7  0x0000000000e58514: eldo_command [analys.c:?]
+#   8  0x0000000000e595fa: loc_eldo_analysis_line [analys.c:?]
+#   9  0x0000000000e5b6aa: eldo_analysis_line+0x52a [eldo_64.exe]
+#  10  0x0000000000e5ce5a: analys_parse_line_with_env+0xaaa [eldo_64.exe]
+#  11  0x0000000000e5de64: eldo_analysis+0x6b4 [eldo_64.exe]
+#  12  0x000000000098c554: aldoprince+0x984 [eldo_64.exe]
+#  13  0x0000000000e92a03: aeldosub+0x2a3 [eldo_64.exe]
+#  14  0x0000000000e99970: aeldo+0x560 [eldo_64.exe]
+#  15  0x0000000000923e8f: main+0x1f [eldo_64.exe]
+#  16  0x00007f27bba97555: __libc_start_main+0xf5 [libc.so.6]
+#  17  0x000000000092c931: <unknown @0x92c931>
+# End of Stack Trace
+
+Stack Trace Dump
+Program = /soft/MENTOR/amsv/aol/bin/eldo_64.exe (v20.1_0.1)
+Args = -i tp_aime
+Date = Tue Sep 14 15:07:39 2021
+# Level    PC      Function Name+offset  filename
+#====================================================
+#   0  0x0000000000e7bd67: eldo_dump_callstack_linux [eldo_dump_stacktrace.c:?]
+#   1  0x0000000000e7bdcd: eldo_dump_callstack+0x3d [eldo_64.exe]
+#   2  0x0000000000cf780a: FAULT_exit+0x1aa [eldo_64.exe]
+#   3  0x00007f7fb6383630: +0xf630 [libpthread.so.0]
+#   4  0x00007f7faf1f9269: +0x90269 [libc.so.6]
+#   5  0x0000000000a4cd8f: cscont+0x99f [eldo_64.exe]
+#   6  0x0000000000e46226: send_current_line+0xcd6 [eldo_64.exe]
+#   7  0x0000000000e58514: eldo_command [analys.c:?]
+#   8  0x0000000000e595fa: loc_eldo_analysis_line [analys.c:?]
+#   9  0x0000000000e5b6aa: eldo_analysis_line+0x52a [eldo_64.exe]
+#  10  0x0000000000e5ce5a: analys_parse_line_with_env+0xaaa [eldo_64.exe]
+#  11  0x0000000000e5de64: eldo_analysis+0x6b4 [eldo_64.exe]
+#  12  0x000000000098c554: aldoprince+0x984 [eldo_64.exe]
+#  13  0x0000000000e92a03: aeldosub+0x2a3 [eldo_64.exe]
+#  14  0x0000000000e99970: aeldo+0x560 [eldo_64.exe]
+#  15  0x0000000000923e8f: main+0x1f [eldo_64.exe]
+#  16  0x00007f7faf18b555: __libc_start_main+0xf5 [libc.so.6]
+#  17  0x000000000092c931: <unknown @0x92c931>
+# End of Stack Trace
+

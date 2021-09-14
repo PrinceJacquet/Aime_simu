@@ -1,0 +1,8 @@
+t `file`			to call the text editor
+asmv 				to go to ASMV2020 environement 
+eldo `file`			to compute the commands written in file 
+`file.chi`			is generated with all computed results
+`file.wdb`			is generated to visualize the signals 
+ezwave `file.wdb` 	to visualize file
+
+
