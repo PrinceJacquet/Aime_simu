@@ -1,0 +1,610 @@
+  Run on madiran (Linux 3.10.0-1062.12.1.el7.x86_64)
+
+-----------| System Information |---------------
+
+*** User  : jacque
+*** OS    : CentOS Linux release 7.7.1908 (Core) [VCO = aol]
+*** CPU   :
+    Common KVM processor
+    Number of physical processors     : 2
+    Hyper-Threading Technology        : disabled
+    Number of cpu cores               : 20
+    Number of logical processors      : 20
+*** Freq  : 2992.968MHz
+*** Cache : 16384 KB
+*** MEM   : 48297336 kB
+*** Date  : Tue Sep 14 14:10:12 2021
+
+*** Eldo VERSION : ELDO 2020.1 (64 bits) Thu Jan 23 17:00:12 GMT 2020
+
+/soft/MENTOR/amsv/aol/bin/eldo_64.exe -i tp_aime
+
+
+***> 14-Sep-2021 14:10:12 - STARTING PARSING PHASE ...
+
+***** PRE-PROCESSING ...
+1*******14-Sep-21 *******  ELDO 2020.1 (64 bits)  (v20.1_0.1)  *******14:10:12******
+
+0Titre test
+
+0****     INPUT LISTING                                               
+
+0***********************************************************************
+    2  Vdd 1 0 3
+    3  Vcom 2 0
+    4  .DC vcom 0 3 0.01
+    5  .MODEL MOD1 NMOS LEVEL=3
+    6  +ID=0.1U
+    7  +TOX=0.025U
+    8  +NSUB=7E16
+    9  +NSS=1E10
+   10  +UO=500
+   11  +XJ=0.5U THETA=0.01
+Warning 902: In file "./tp_aime" line 6:
++   In model: "MOD1". Parameter: "ID" ignored.
+   12  M1 1 2 0 0 MOD1 L=1U W=5U
+   13  .OPTION post
+   14  .END
+
+End of file 
+
+
+***** 0  error(s). 
+***** 1  warning(s). 
+
+
+***> 14-Sep-2021 14:10:12 - PARSING completed: WALL CLOCK ELAPSED TIME 0s <***
+
+
+***> 14-Sep-2021 14:10:12 - STARTING ELABORATION PHASE ...
+
+----------------| Design Summary |-----------------
+3 elements
+2 nodes 
+2 sources
+
+Detail about objects and nodes found in the design:
+Number of nodes                     2
+Number of resistors                 0
+Number of capacitors                0
+Number of inductors                 0
+Number of voltage sources           2
+Number of current sources           0
+Number of dependent sources         0
+Number of diodes                    0
+Number of BJT                       0
+Number of JFET                      0
+Number of MOS                       1
+Number of SWITCHES                  0
+Number of transmission lines        0
+Total number of elements            3
+Repartition per level of MOS
+  BERK3 1
+---------------------------------------------------
+
+***** 0  error(s). 
+***** 1  warning(s). 
+
+
+------------| Elaboration Information |------------
+***> Memory:
+Peak memory usage (MB): 37
+Virtual memory usage (MB): 400
+
+***> Inputs:
+2 input signals
+---------------------------------------------------
+Note 108: Acquiring license Analog Simulator Kernel (eldokernel)
+*** DATE: 14-Sep-2021 14:10:12
+*** TITLE: Titre test
+
+TEMPERATURE : 27.000000 degrees C
+
+1***************14-Sep-2021 ***********************  ELDO 2020.1 (64 bits)  (v20.1_0.1)  ***********************14:10:12*****************
+
+0Titre test
+0****                 MODELS PARAMETERS                                    TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+
+ DEVICE          MOS
+ MODEL: MOD1
+ TYPE            N
+ LEVEL 3 : Berkeley Spice compatible model
+
+  names    values    units     names    values    units     names    values    units   
+  -----    ------    -----     -----    ------    -----     -----    ------    -----   
+VTO     = 8.1359E-01 V       KP      = 6.9063E-05 A/V^2   GAMMA   = 1.1036E+00 V^1/2  
+PHI     = 7.9609E-01 V       UO      = 5.0000E+02 unit1   VMAX    = 0.0        m/s    
+THETA   = 1.0000E-02 1/V     ETA     = 0.0        -       KAPPA   = 2.0000E-01 1/V    
+DELTA   = 0.0        -       NSUB    = 7.0000E+16 At/cm^3 NSS     = 1.0000E+10 At/cm^2
+NFS     = 0.0        At/cm^2 TPG     = 1.0000E+00 -       TOX     = 2.5000E-08 m      
+COX     = 1.3813E-03 F/m^2   CGSO    = 0.0        F/m     CGDO    = 0.0        F/m    
+CGBO    = 0.0        F/m     KF      = 0.0        -       AF      = 1.0000E+00 -      
+XQC     = 1.0000E+00 -       CAPLEV  = 0          -       
+
+ *** Common extrinsic model parameters ***
+OPTACM  = 0          -       ARLEV   = 6          -       ALEV    = 6          -      
+RLEV    = 6          -       
+ * Access resistances related parameters *
+RD      = 0.0        Ohm     RS      = 0.0        Ohm     RSH     = 0.0        Ohm/Sq.
+RDC     = 0.0        Ohm     RSC     = 0.0        Ohm     
+ * Geometry related parameters *
+LD      = 0.0        m       WD      = 0.0        m       DL      = 0.0        m      
+DW      = 0.0        m       LDIF    = 0.0        m       HDIF    = 0.0        m      
+WMLT    = 1.0000E+00 -       LMLT    = 1.0000E+00 -       DEL     = 0.0        m      
+XJ      = 5.0000E-07 m       
+ * Static bulk-diode related parameters *
+DIOLEV  = 1          -       JS      = 0.0        A/m^2   JSW     = 0.0        A/m    
+IS      = 1.0000E-14 A       N       = 1.0000E+00 -       NDS     = 1.0000E+00 -      
+VNDS    =-1.0000E+00 V       VDLIN   = 5.0000E-01 -       
+ * Dynamic bulk-diode related parameters *
+DCAPLEV = 2          -       CJGATE  = 0.0                CBD     = 0.0        F      
+CBS     = 0.0        F       CJ      = 8.5215E-04 F/m^2   CJSW    = 0.0        F/m    
+FC      = 5.0000E-01 -       MJ      = 5.0000E-01 -       MJSW    = 3.3000E-01 -      
+TT      = 0.0        s       PB      = 8.0000E-01 V       PBSW    = 8.0000E-01 V      
+ * Temperature related Parameters 
+EG      = 1.1100E+00 eV      GAP1    = 7.0200E-04 eV/degK GAP2    = 1.1080E+03 degK   
+TNOM    = 2.7000E+01 degC    TLEV    = 0          -       TLEVC   = 0          -      
+TLEVI   = 1          -       XTI     = 0.0        -       
+ * Temperature Access Resistance related parameters * TLEVR = 1 
+TRD1    = 0.0        1/degK  TRS1    = 0.0        1/degK  TRSH1   = 0.0        1/degK 
+TRD2    = 0.0        unit2   TRS2    = 0.0        unit2   TRSH2   = 0.0        unit2  
+
+unit1 represents cm^2/V.s
+unit2 represents 1/degK^2
+
+
+
+
+
+1***************14-Sep-2021 ***********************  ELDO 2020.1 (64 bits)  (v20.1_0.1)  ***********************14:10:12*****************
+
+0Titre test
+0****                 OPTION SUMMARY                                         TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+
+
+
+*** DC Control Options : 
+
+GMIN           = 1.00e-12 NMAXSIZE       = 100000   ITL1           = 100      
+GRAMP          = 0        NETSIZE        = 100      VMINDC         = UNDEF    
+VMAXDC         = UNDEF    
+
+*** Initial Accuracy Control Options (May be adjusted during simulation): 
+
+ITOL           = 1.00e-06 EPS            = 5.00e-03 VNTOL          = 1.00e-06 
+RELTOL         = 1.00e-03 RELERR         = 5.00e-02 PIVREL         = 1.00e-03 
+PIVTOL         = 1.00e-16 ABSTOL         = 1.00e-12 FLXTOL         = 1.00e-11 
+MAXORD         = 2.00e+00 
+
+*** Time-step Control Options : 
+
+ZOOMTIME       = 1.00e+00 STEP           = 0.00e+00 STARTSMP       = 0.00e+00 
+FREQSMP        = 0.00e+00 COURESOL       = 0.00e+00 TRTOL          = 7.00e+00 
+HMIN           = 1.00e-12 ITL3           = 3        ITL4           = 13       
+FT             = 1.25e-01 DCLOG          = 1.00e+00 LVLTIM         = 2        
+LVLCNV         = 2        DVDT           = -1       RELVAR         = 1.50e-01 
+ABSVAR         = 2.00e-01 SAMPLE         = 0.00e+00 HMAX           = UNDEF    
+
+
+*** MosFet default Options : 
+
+SCALE          = 1.00e+00 SCALM          = 1.00e+00 SCALEBSIM      = 1.00e+00 
+DEFAD          = UNDEF    DEFAS          = UNDEF    DEFPD          = UNDEF    
+DEFPS          = UNDEF    DEFW           = 1.00e-04 DEFL           = 1.00e-04 
+DEFNRD         = UNDEF    DEFNRS         = UNDEF    XA             = 6.00e-06 
+LIMRMOS        = UNDEF    SHRINK         = 1.00e+00 
+
+*** General Information Options : 
+
+TUNING         = UNDEF    
+CPTIME         = UNDEF    STAT           = 0        TIMEDIV        = 0        
+SIMUDIV        = 10       SAVETIME       = 0        MAXTRAN        = 1000     
+MAXNODES       = 10000    MAXV           = 1.00e+13 LIMPROBE       = 10000    
+FLICKER_NOISE  = 0        THERMAL_NOISE  = 0        TNOM           = 2.70e+01 
+TMAX           = UNDEF    
+SPICDC         = 0        SPIOUT         = 0        NEWTON         = 1        
+OSR            = 0        TRAP           = 1        GEAR           = 0        
+BE             = 0        PROBEOP        = 0        NOLAT          = 0        
+NWLAT          = 0        ANALOG         = 0        BBDEBUG        = 0        
+NOSIZECHK      = 0        QTRUNC         = 0        UNBOUND        = 0        
+LCAPOP         = 0        NOAEX          = 0        AEX            = 0        
+AEX            = 0        STVER          = 0        MOTOROLA       = 0        
+AMS            = 0        ASPEC          = 0        INPUT          = 0        
+NOINIT         = 0        PSF            = 0        NOBIN          = 0        
+NOCOU          = 1        WL             = 0        NODE           = 0        
+LIST           = 0        SPI3BIN        = 0        SPI3ASC        = 0        
+NOMOD          = 0        NOBIN          = 0        NOCOU          = 1        
+RMOS           = 0        NWRMOS         = 1        NONWRMOS       = 0        
+USEDEFAP       = 0        NOASCII        = 0        ASCII          = 1        
+MIXED          = 0        SWITCH         = 0        USERSWITCH     = 0        
+TIMING         = 0        MODWL          = 1        ULOGIC         = 0        
+
+
+
+
+***> 14-Sep-2021 14:10:13 - ELABORATION completed: WALL CLOCK ELAPSED TIME 1s <***
+
+
+***> 14-Sep-2021 14:10:13 - STARTING SIMULATION PHASE ...
+DC algorithm: trying Fixed Gmin
+*    VCOM = 0.000000E+00          : 0.33%
+*    VCOM = 1.000000E-02          : 0.66%
+*    VCOM = 2.000000E-02          : 1.00%
+*    VCOM = 3.000000E-02          : 1.33%
+*    VCOM = 4.000000E-02          : 1.66%
+*    VCOM = 5.000000E-02          : 1.99%
+*    VCOM = 6.000000E-02          : 2.33%
+*    VCOM = 7.000000E-02          : 2.66%
+*    VCOM = 8.000000E-02          : 2.99%
+*    VCOM = 9.000000E-02          : 3.32%
+*    VCOM = 1.000000E-01          : 3.65%
+*    VCOM = 1.100000E-01          : 3.99%
+*    VCOM = 1.200000E-01          : 4.32%
+*    VCOM = 1.300000E-01          : 4.65%
+*    VCOM = 1.400000E-01          : 4.98%
+*    VCOM = 1.500000E-01          : 5.32%
+*    VCOM = 1.600000E-01          : 5.65%
+*    VCOM = 1.700000E-01          : 5.98%
+*    VCOM = 1.800000E-01          : 6.31%
+*    VCOM = 1.900000E-01          : 6.64%
+*    VCOM = 2.000000E-01          : 6.98%
+*    VCOM = 2.100000E-01          : 7.31%
+*    VCOM = 2.200000E-01          : 7.64%
+*    VCOM = 2.300000E-01          : 7.97%
+*    VCOM = 2.400000E-01          : 8.31%
+*    VCOM = 2.500000E-01          : 8.64%
+*    VCOM = 2.600000E-01          : 8.97%
+*    VCOM = 2.700000E-01          : 9.30%
+*    VCOM = 2.800000E-01          : 9.63%
+*    VCOM = 2.900000E-01          : 9.97%
+*    VCOM = 3.000000E-01          :10.30%
+*    VCOM = 3.100000E-01          :10.63%
+*    VCOM = 3.200000E-01          :10.96%
+*    VCOM = 3.300000E-01          :11.30%
+*    VCOM = 3.400000E-01          :11.63%
+*    VCOM = 3.500000E-01          :11.96%
+*    VCOM = 3.600000E-01          :12.29%
+*    VCOM = 3.700000E-01          :12.62%
+*    VCOM = 3.800000E-01          :12.96%
+*    VCOM = 3.900000E-01          :13.29%
+*    VCOM = 4.000000E-01          :13.62%
+*    VCOM = 4.100000E-01          :13.95%
+*    VCOM = 4.200000E-01          :14.29%
+*    VCOM = 4.300000E-01          :14.62%
+*    VCOM = 4.400000E-01          :14.95%
+*    VCOM = 4.500000E-01          :15.28%
+*    VCOM = 4.600000E-01          :15.61%
+*    VCOM = 4.700000E-01          :15.95%
+*    VCOM = 4.800000E-01          :16.28%
+*    VCOM = 4.900000E-01          :16.61%
+*    VCOM = 5.000000E-01          :16.94%
+*    VCOM = 5.100000E-01          :17.28%
+*    VCOM = 5.200000E-01          :17.61%
+*    VCOM = 5.300000E-01          :17.94%
+*    VCOM = 5.400000E-01          :18.27%
+*    VCOM = 5.500000E-01          :18.60%
+*    VCOM = 5.600000E-01          :18.94%
+*    VCOM = 5.700000E-01          :19.27%
+*    VCOM = 5.800000E-01          :19.60%
+*    VCOM = 5.900000E-01          :19.93%
+*    VCOM = 6.000000E-01          :20.27%
+*    VCOM = 6.100000E-01          :20.60%
+*    VCOM = 6.200000E-01          :20.93%
+*    VCOM = 6.300000E-01          :21.26%
+*    VCOM = 6.400000E-01          :21.59%
+*    VCOM = 6.500000E-01          :21.93%
+*    VCOM = 6.600000E-01          :22.26%
+*    VCOM = 6.700000E-01          :22.59%
+*    VCOM = 6.800000E-01          :22.92%
+*    VCOM = 6.900000E-01          :23.26%
+*    VCOM = 7.000000E-01          :23.59%
+*    VCOM = 7.100000E-01          :23.92%
+*    VCOM = 7.200000E-01          :24.25%
+*    VCOM = 7.300000E-01          :24.58%
+*    VCOM = 7.400000E-01          :24.92%
+*    VCOM = 7.500000E-01          :25.25%
+*    VCOM = 7.600000E-01          :25.58%
+*    VCOM = 7.700000E-01          :25.91%
+*    VCOM = 7.800000E-01          :26.25%
+*    VCOM = 7.900000E-01          :26.58%
+*    VCOM = 8.000000E-01          :26.91%
+*    VCOM = 8.100000E-01          :27.24%
+*    VCOM = 8.200000E-01          :27.57%
+*    VCOM = 8.300000E-01          :27.91%
+*    VCOM = 8.400000E-01          :28.24%
+*    VCOM = 8.500000E-01          :28.57%
+*    VCOM = 8.600000E-01          :28.90%
+*    VCOM = 8.700000E-01          :29.24%
+*    VCOM = 8.800000E-01          :29.57%
+*    VCOM = 8.900000E-01          :29.90%
+*    VCOM = 9.000000E-01          :30.23%
+*    VCOM = 9.100000E-01          :30.56%
+*    VCOM = 9.200000E-01          :30.90%
+*    VCOM = 9.300000E-01          :31.23%
+*    VCOM = 9.400000E-01          :31.56%
+*    VCOM = 9.500000E-01          :31.89%
+*    VCOM = 9.600000E-01          :32.23%
+*    VCOM = 9.700000E-01          :32.56%
+*    VCOM = 9.800000E-01          :32.89%
+*    VCOM = 9.900000E-01          :33.22%
+*    VCOM = 1.000000E+00          :33.55%
+*    VCOM = 1.010000E+00          :33.89%
+*    VCOM = 1.020000E+00          :34.22%
+*    VCOM = 1.030000E+00          :34.55%
+*    VCOM = 1.040000E+00          :34.88%
+*    VCOM = 1.050000E+00          :35.22%
+*    VCOM = 1.060000E+00          :35.55%
+*    VCOM = 1.070000E+00          :35.88%
+*    VCOM = 1.080000E+00          :36.21%
+*    VCOM = 1.090000E+00          :36.54%
+*    VCOM = 1.100000E+00          :36.88%
+*    VCOM = 1.110000E+00          :37.21%
+*    VCOM = 1.120000E+00          :37.54%
+*    VCOM = 1.130000E+00          :37.87%
+*    VCOM = 1.140000E+00          :38.21%
+*    VCOM = 1.150000E+00          :38.54%
+*    VCOM = 1.160000E+00          :38.87%
+*    VCOM = 1.170000E+00          :39.20%
+*    VCOM = 1.180000E+00          :39.53%
+*    VCOM = 1.190000E+00          :39.87%
+*    VCOM = 1.200000E+00          :40.20%
+*    VCOM = 1.210000E+00          :40.53%
+*    VCOM = 1.220000E+00          :40.86%
+*    VCOM = 1.230000E+00          :41.20%
+*    VCOM = 1.240000E+00          :41.53%
+*    VCOM = 1.250000E+00          :41.86%
+*    VCOM = 1.260000E+00          :42.19%
+*    VCOM = 1.270000E+00          :42.52%
+*    VCOM = 1.280000E+00          :42.86%
+*    VCOM = 1.290000E+00          :43.19%
+*    VCOM = 1.300000E+00          :43.52%
+*    VCOM = 1.310000E+00          :43.85%
+*    VCOM = 1.320000E+00          :44.19%
+*    VCOM = 1.330000E+00          :44.52%
+*    VCOM = 1.340000E+00          :44.85%
+*    VCOM = 1.350000E+00          :45.18%
+*    VCOM = 1.360000E+00          :45.51%
+*    VCOM = 1.370000E+00          :45.85%
+*    VCOM = 1.380000E+00          :46.18%
+*    VCOM = 1.390000E+00          :46.51%
+*    VCOM = 1.400000E+00          :46.84%
+*    VCOM = 1.410000E+00          :47.18%
+*    VCOM = 1.420000E+00          :47.51%
+*    VCOM = 1.430000E+00          :47.84%
+*    VCOM = 1.440000E+00          :48.17%
+*    VCOM = 1.450000E+00          :48.50%
+*    VCOM = 1.460000E+00          :48.84%
+*    VCOM = 1.470000E+00          :49.17%
+*    VCOM = 1.480000E+00          :49.50%
+*    VCOM = 1.490000E+00          :49.83%
+*    VCOM = 1.500000E+00          :50.17%
+*    VCOM = 1.510000E+00          :50.50%
+*    VCOM = 1.520000E+00          :50.83%
+*    VCOM = 1.530000E+00          :51.16%
+*    VCOM = 1.540000E+00          :51.50%
+*    VCOM = 1.550000E+00          :51.83%
+*    VCOM = 1.560000E+00          :52.16%
+*    VCOM = 1.570000E+00          :52.49%
+*    VCOM = 1.580000E+00          :52.82%
+*    VCOM = 1.590000E+00          :53.16%
+*    VCOM = 1.600000E+00          :53.49%
+*    VCOM = 1.610000E+00          :53.82%
+*    VCOM = 1.620000E+00          :54.15%
+*    VCOM = 1.630000E+00          :54.49%
+*    VCOM = 1.640000E+00          :54.82%
+*    VCOM = 1.650000E+00          :55.15%
+*    VCOM = 1.660000E+00          :55.48%
+*    VCOM = 1.670000E+00          :55.81%
+*    VCOM = 1.680000E+00          :56.15%
+*    VCOM = 1.690000E+00          :56.48%
+*    VCOM = 1.700000E+00          :56.81%
+*    VCOM = 1.710000E+00          :57.14%
+*    VCOM = 1.720000E+00          :57.48%
+*    VCOM = 1.730000E+00          :57.81%
+*    VCOM = 1.740000E+00          :58.14%
+*    VCOM = 1.750000E+00          :58.47%
+*    VCOM = 1.760000E+00          :58.80%
+*    VCOM = 1.770000E+00          :59.14%
+*    VCOM = 1.780000E+00          :59.47%
+*    VCOM = 1.790000E+00          :59.80%
+*    VCOM = 1.800000E+00          :60.13%
+*    VCOM = 1.810000E+00          :60.47%
+*    VCOM = 1.820000E+00          :60.80%
+*    VCOM = 1.830000E+00          :61.13%
+*    VCOM = 1.840000E+00          :61.46%
+*    VCOM = 1.850000E+00          :61.79%
+*    VCOM = 1.860000E+00          :62.13%
+*    VCOM = 1.870000E+00          :62.46%
+*    VCOM = 1.880000E+00          :62.79%
+*    VCOM = 1.890000E+00          :63.12%
+*    VCOM = 1.900000E+00          :63.46%
+*    VCOM = 1.910000E+00          :63.79%
+*    VCOM = 1.920000E+00          :64.12%
+*    VCOM = 1.930000E+00          :64.45%
+*    VCOM = 1.940000E+00          :64.78%
+*    VCOM = 1.950000E+00          :65.12%
+*    VCOM = 1.960000E+00          :65.45%
+*    VCOM = 1.970000E+00          :65.78%
+*    VCOM = 1.980000E+00          :66.11%
+*    VCOM = 1.990000E+00          :66.45%
+*    VCOM = 2.000000E+00          :66.78%
+*    VCOM = 2.010000E+00          :67.11%
+*    VCOM = 2.020000E+00          :67.44%
+*    VCOM = 2.030000E+00          :67.77%
+*    VCOM = 2.040000E+00          :68.11%
+*    VCOM = 2.050000E+00          :68.44%
+*    VCOM = 2.060000E+00          :68.77%
+*    VCOM = 2.070000E+00          :69.10%
+*    VCOM = 2.080000E+00          :69.44%
+*    VCOM = 2.090000E+00          :69.77%
+*    VCOM = 2.100000E+00          :70.10%
+*    VCOM = 2.110000E+00          :70.43%
+*    VCOM = 2.120000E+00          :70.76%
+*    VCOM = 2.130000E+00          :71.10%
+*    VCOM = 2.140000E+00          :71.43%
+*    VCOM = 2.150000E+00          :71.76%
+*    VCOM = 2.160000E+00          :72.09%
+*    VCOM = 2.170000E+00          :72.43%
+*    VCOM = 2.180000E+00          :72.76%
+*    VCOM = 2.190000E+00          :73.09%
+*    VCOM = 2.200000E+00          :73.42%
+*    VCOM = 2.210000E+00          :73.75%
+*    VCOM = 2.220000E+00          :74.09%
+*    VCOM = 2.230000E+00          :74.42%
+*    VCOM = 2.240000E+00          :74.75%
+*    VCOM = 2.250000E+00          :75.08%
+*    VCOM = 2.260000E+00          :75.42%
+*    VCOM = 2.270000E+00          :75.75%
+*    VCOM = 2.280000E+00          :76.08%
+*    VCOM = 2.290000E+00          :76.41%
+*    VCOM = 2.300000E+00          :76.74%
+*    VCOM = 2.310000E+00          :77.08%
+*    VCOM = 2.320000E+00          :77.41%
+*    VCOM = 2.330000E+00          :77.74%
+*    VCOM = 2.340000E+00          :78.07%
+*    VCOM = 2.350000E+00          :78.41%
+*    VCOM = 2.360000E+00          :78.74%
+*    VCOM = 2.370000E+00          :79.07%
+*    VCOM = 2.380000E+00          :79.40%
+*    VCOM = 2.390000E+00          :79.73%
+*    VCOM = 2.400000E+00          :80.07%
+*    VCOM = 2.410000E+00          :80.40%
+*    VCOM = 2.420000E+00          :80.73%
+*    VCOM = 2.430000E+00          :81.06%
+*    VCOM = 2.440000E+00          :81.40%
+*    VCOM = 2.450000E+00          :81.73%
+*    VCOM = 2.460000E+00          :82.06%
+*    VCOM = 2.470000E+00          :82.39%
+*    VCOM = 2.480000E+00          :82.72%
+*    VCOM = 2.490000E+00          :83.06%
+*    VCOM = 2.500000E+00          :83.39%
+*    VCOM = 2.510000E+00          :83.72%
+*    VCOM = 2.520000E+00          :84.05%
+*    VCOM = 2.530000E+00          :84.39%
+*    VCOM = 2.540000E+00          :84.72%
+*    VCOM = 2.550000E+00          :85.05%
+*    VCOM = 2.560000E+00          :85.38%
+*    VCOM = 2.570000E+00          :85.71%
+*    VCOM = 2.580000E+00          :86.05%
+*    VCOM = 2.590000E+00          :86.38%
+*    VCOM = 2.600000E+00          :86.71%
+*    VCOM = 2.610000E+00          :87.04%
+*    VCOM = 2.620000E+00          :87.38%
+*    VCOM = 2.630000E+00          :87.71%
+*    VCOM = 2.640000E+00          :88.04%
+*    VCOM = 2.650000E+00          :88.37%
+*    VCOM = 2.660000E+00          :88.70%
+*    VCOM = 2.670000E+00          :89.04%
+*    VCOM = 2.680000E+00          :89.37%
+*    VCOM = 2.690000E+00          :89.70%
+*    VCOM = 2.700000E+00          :90.03%
+*    VCOM = 2.710000E+00          :90.37%
+*    VCOM = 2.720000E+00          :90.70%
+*    VCOM = 2.730000E+00          :91.03%
+*    VCOM = 2.740000E+00          :91.36%
+*    VCOM = 2.750000E+00          :91.69%
+*    VCOM = 2.760000E+00          :92.03%
+*    VCOM = 2.770000E+00          :92.36%
+*    VCOM = 2.780000E+00          :92.69%
+*    VCOM = 2.790000E+00          :93.02%
+*    VCOM = 2.800000E+00          :93.36%
+*    VCOM = 2.810000E+00          :93.69%
+*    VCOM = 2.820000E+00          :94.02%
+*    VCOM = 2.830000E+00          :94.35%
+*    VCOM = 2.840000E+00          :94.68%
+*    VCOM = 2.850000E+00          :95.02%
+*    VCOM = 2.860000E+00          :95.35%
+*    VCOM = 2.870000E+00          :95.68%
+*    VCOM = 2.880000E+00          :96.01%
+*    VCOM = 2.890000E+00          :96.35%
+*    VCOM = 2.900000E+00          :96.68%
+*    VCOM = 2.910000E+00          :97.01%
+*    VCOM = 2.920000E+00          :97.34%
+*    VCOM = 2.930000E+00          :97.67%
+*    VCOM = 2.940000E+00          :98.01%
+*    VCOM = 2.950000E+00          :98.34%
+*    VCOM = 2.960000E+00          :98.67%
+*    VCOM = 2.970000E+00          :99.00%
+*    VCOM = 2.980000E+00          :99.34%
+*    VCOM = 2.990000E+00          :99.67%
+*    VCOM = 3.000000E+00          :100.00%
+
+***> 14-Sep-2021 14:10:13 - DC completed: TOTAL WALL CLOCK ELAPSED TIME 0s <***
+
+
+
+
+1***************14-Sep-2021 ***********************  ELDO 2020.1 (64 bits)  (v20.1_0.1)  ***********************14:10:12*****************
+
+0Titre test
+0****                 ACCOUNTING INFORMATION                                 TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+
+
+
+
+-----------| Simulated Design Summary |------------
+
+Detail about objects and nodes simulated:
+Number of nodes                     2
+Number of intrinsic nodes           0
+Number of input signals             2
+Number of resistors                 0
+Number of floating capacitors       0
+Number of grounded capacitors       0
+Number of inductors                 0
+Number of voltage sources           2
+Number of current sources           0
+Number of dependent sources         0
+Number of diodes                    0
+Number of BJT                       0
+Number of JFET                      0
+Number of MOS                       1
+Number of SWITCHES                  0
+Number of transmission lines        0
+Total number of elements simulated  3
+Repartition per level of MOS
+  BERK3 1
+Number of equations                 4
+Number of non-zero terms            6
+Percent Zeros                       62.5
+Number of DC points                 301
+Number of Newton iterations         534
+Average number of Newton iterations 1.774e+00
+Evaluation of active devices        1670
+Virtual memory size (MB)            400
+Peak memory size (MB)      42
+---------------------------------------------------
+***>MESSAGE SUMMARY: 1 warning
+
+***> 14-Sep-2021 14:10:13 - GLOBAL CPU TIME 0s 090ms <***
+
+
+***> 14-Sep-2021 14:10:13 - GLOBAL WALL CLOCK ELAPSED TIME 1s <***
+
+
+  Job started at 14-Sep-2021 14:10:12
+  Job end at     14-Sep-2021 14:10:13
+
+  Run on madiran (Linux 3.10.0-1062.12.1.el7.x86_64)
+
+-----------------------------------------
+Maximum number of license(s) consumed:
+   1 Analog Simulator Kernel (eldokernel)
+
+Time spent acquiring licenses: 0.040 s (avg: 0.020 s, max: 0.023 s at Tue Sep 14 14:10:12 2021)
+Time spent releasing licenses: 0.003 s (avg: 0.002 s, max: 0.002 s at Tue Sep 14 14:10:13 2021)
+-----------------------------------------
+
+Simulation Finished.

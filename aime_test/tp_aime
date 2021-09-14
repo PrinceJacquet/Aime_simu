@@ -1,0 +1,14 @@
+Titre test
+Vdd 1 0 3
+Vcom 2 0
+.dc vcom 0 3 0.01
+.model mod1 nmos level=3
++Id=0.1u
++tox=0.025u
++nsub=7e16
++nss=1e10
++uo=500
++xj=0.5u theta=0.01
+M1 1 2 0 0 mod1 L=1u w=5u
+.option post
+.end
